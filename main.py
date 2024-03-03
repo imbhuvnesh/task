@@ -37,8 +37,7 @@ def navigate_and_answer(driver):
         try:
             index = int(slider[0].text[6:8].split('/')[0])
             index = index-1
-            print('index: ', index)
-
+            
             try:
                 question = questions[index]     
                 button1, button2, button3 = buttons[index*3: index*3+3]
